@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/background_with_shadow.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_add_a_photo.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_baseline_edit_location_24.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_baseline_play_circle_outline_24.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_baseline_settings_remote_24.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_cloud_download_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_cloud_upload_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_control_point_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_delete_forever_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_file_download_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_file_upload_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_filter_center_focus_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_keyboard_arrow_01.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_playlist_play_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_query_builder_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_rotate_right_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_settings_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_souko_24.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_touch_app_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/ic_vertical_align_bottom_black_24dp.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/drawable/myrect.xml" value="0.12" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_list__display.xml" value="0.11388888888888889" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_qr_code_read_in_view.xml" value="0.1" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_read_ber_code.xml" value="0.25" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_select_sheet_list_view.xml" value="0.25" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_send_csv.xml" value="0.1" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/activity_souko__input.xml" value="0.1" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/custom_spinner.xml" value="0.125" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/custom_spinner_dropdown.xml" value="0.125" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/list_item.xml" value="0.13044579533941236" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/row_sheet_listview.xml" value="0.21" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/layout/sub.xml" value="0.1" />
+        <entry key="..\:/Users/natsume/AndroidStudioProjects/Jim_Test_002/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.163" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_rounded_corners_5dp.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

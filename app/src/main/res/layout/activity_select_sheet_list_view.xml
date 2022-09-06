@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#20666666"
+    tools:context=".SelectSheetListView">
+
+    <!-- ヘッダー  Start -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1889e4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/header_view"
+        app:icon="@drawable/ic_keyboard_arrow_01"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_00002"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            >
+
+
+        <ImageButton
+            android:id="@+id/back_btn_05"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_keyboard_arrow_01"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp"
+            android:text=""
+            android:drawableLeft="@drawable/ic_account_01"
+            android:drawablePadding="2dp"
+            android:singleLine="true"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/back_btn"
+            android:letterSpacing="0.16"
+            android:id="@+id/user_num_05"
+            />
+
+        <!--  倉庫コード アイコン  -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="200dp"
+            android:paddingTop="10dp"
+            app:layout_goneMarginTop="20dp"
+            android:src="@drawable/ic_souko_24"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/user_num_05"
+            android:id="@+id/souko_icon_003"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="6dp"
+            android:text=""
+            android:drawablePadding="2dp"
+            android:singleLine="true"
+            android:gravity="right"
+            app:layout_constraintLeft_toRightOf="@+id/souko_icon_003"
+            app:layout_constraintTop_toTopOf="parent"
+            android:letterSpacing="0.2"
+            android:id="@+id/souko_num_003"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!-- ヘッダー  END -->
+
+    <!-- 棚卸し　数　合計 -->
+    <TextView
+        android:id="@+id/item_count_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="15dp"
+        android:background="#EDD5AC"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:id="@+id/linear_001"
+        >
+
+        <TextView
+            android:id="@+id/tana_label"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="5dp"
+            android:background="#EE3769"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp"
+            android:text="修正"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:letterSpacing="0.6"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="12dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:id="@+id/shouhin_c_01_num"
+            />
+
+    </LinearLayout>
+
+    <!-- 商品名 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:id="@+id/linear_0010"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="12dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:id="@+id/tanaoroshi_update_name"
+            />
+
+
+    </LinearLayout>
+
+
+    <!-- 棚卸し数 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:id="@+id/linear_002"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="12dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text=""
+            android:textColor="#EE3769"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/tanaoroshi_update"
+            />
+
+    </LinearLayout>
+
+    <!-- ユーザー入力　画面　テキストエディット　Start -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:paddingHorizontal="30dp"
+        android:textColorHint="#EE3769"
+        android:id="@+id/list_update_box"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="棚卸 数を変更する値を入力してください"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:id="@+id/list_update"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- データ修正　表示 start -->
+    <FrameLayout
+        android:id="@+id/contentsBackground_03"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/frame_style_02"
+        android:elevation="30dp"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            android:id="@+id/linear_01"
+            >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="担当"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/l_01"
+        />
+    <!-- 担当　データ -->
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/la_tabtou"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/d_01"
+        />
+
+
+
+        </LinearLayout>
+
+        <!-- ************** 横線 *************** -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/darker_gray_02"
+            android:id="@+id/list_line_col_02"
+            />
+
+        <!--********* 2列目 *********-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:orientation="horizontal"
+            android:id="@+id/linear_02"
+            >
+
+            <!-- 倉庫コード ラベル -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text05_title_01"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/l_02"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/list_title_01"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/d_02"
+                />
+
+
+
+        </LinearLayout>
+
+        <!--********* 3列目 *********-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/linear_03"
+            >
+
+            <!-- 商品コード タイトル -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text05_title_02"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/l_03"
+                />
+            <!-- 商品コード データ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/list_title_01"
+                android:textSize="14dp"
+                android:id="@+id/d_03"
+                />
+        </LinearLayout>
+
+
+        <!--********* 4列目 *********-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="87dp"
+            android:orientation="horizontal"
+            android:id="@+id/linear_04"
+            >
+
+            <!-- 商品名 タイトル -->
+            <TextView
+                android:id="@+id/l_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="商品名"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/list_title_01"
+                android:textSize="12.2dp"
+                android:letterSpacing="0.13"
+                android:id="@+id/d_04"
+                />
+
+
+        </LinearLayout>
+
+
+        <!-- ************** 横線 *************** -->
+        <View
+            android:id="@+id/list_line_col_03"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="138dp"
+            android:background="@color/darker_gray_02" />
+
+
+        <!--********* 6列目 *********-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:orientation="horizontal"
+            android:id="@+id/linear_06"
+            >
+
+            <!-- 棚卸数 ラベル -->
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text05_title_04"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:id="@+id/l_06"
+                />
+
+            <!-- 棚卸数 データ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/list_title_01"
+                app:layout_constraintLeft_toRightOf="@+id/text05TitleMadeIn"
+                app:layout_constraintTop_toBottomOf="@+id/text05TitleNumber"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/text05TitleMadeIn"
+                android:id="@+id/d_06"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <!-- データ修正　表示 end -->
+
+
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listView03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:divider="@null"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopMenu">
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#1889e4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/header_view"
+    app:icon="@drawable/ic_keyboard_arrow_01"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_00001"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            >
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_keyboard_arrow_01"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/back_btn"
+        />
+
+            <!--  担当者 アイコン  -->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="60dp"
+                android:paddingTop="10dp"
+                app:layout_goneMarginTop="20dp"
+                android:src="@drawable/ic_account_01"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/back_btn"
+                android:id="@+id/user_icon"
+                />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="6dp"
+        android:text="テスト"
+        android:drawablePadding="2dp"
+        android:singleLine="true"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:letterSpacing="0.16"
+        android:id="@+id/user_num"
+        />
+
+            <!--  倉庫コード アイコン  -->
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="200dp"
+                android:paddingTop="10dp"
+                app:layout_goneMarginTop="20dp"
+                android:src="@drawable/ic_souko_24"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/user_num"
+                android:id="@+id/souko_icon"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="6dp"
+            android:text=""
+            android:drawablePadding="2dp"
+            android:singleLine="true"
+            android:gravity="right"
+            app:layout_constraintLeft_toRightOf="@+id/souko_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/souko_num"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
+
+    <!--　メニュー　ボタン エリア　-->
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:background="@drawable/bg_border_bottom_02"
+        android:gravity="center_horizontal"
+        android:paddingBottom="7dp"
+        android:textColor="#666666"
+        android:textSize="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_view"
+        android:letterSpacing="0.2"
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_btn_01"
+        style="@style/Text_Style_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="24dp"
+        android:background="#2B72B1"
+        android:text="棚卸"
+        android:textSize="18sp"
+        app:icon="@drawable/siro_aicon_65_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        style="@style/Text_Style_01"
+        app:icon="@drawable/siro_aicon_65_50_c_02"
+        app:layout_constraintTop_toBottomOf="@+id/menu_btn_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:background="#1678cf"
+        android:text="データ訂正"
+        android:textSize="18sp"
+        android:id="@+id/test_nyuuko"
+        />
+
+    <!--
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/test_nyuuko"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        style="@style/Text_Style_01"
+        android:background="@drawable/button_background"
+        app:icon="@drawable/siro_aicon_65_50_c_03"
+        android:text="データ送信"
+        android:textSize="18sp"
+        android:id="@+id/List_test"
+        />
+        -->
+
+    <!--　メニュー　ボタン エリア　END　-->
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="JIM Computer Service Co.,Ltd. all rights reserved"
+        android:layout_marginBottom="50dp"
+        android:textSize="13dp"
+        android:id="@+id/post_view"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

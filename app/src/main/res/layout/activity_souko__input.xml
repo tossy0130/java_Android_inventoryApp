@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Souko_Input">
+
+    <!-- ヘッダー start -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1889e4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/header_view"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_keyboard_arrow_01"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:id="@+id/back_btn_03"
+            />
+
+
+        <TextView
+            android:id="@+id/user_num_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:drawableLeft="@drawable/ic_account_01"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:text="テスト"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+    </FrameLayout>
+    <!-- ヘッダー END-->
+
+
+    <!--　日付表示用　-->
+    <TextView
+        android:id="@+id/date_view_souko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:background="@drawable/bg_border_bottom_02"
+        android:gravity="center_horizontal"
+        android:paddingBottom="7dp"
+        android:textColor="#666666"
+        android:textSize="17dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_view"
+        android:letterSpacing="0.2"
+        />
+
+
+    <!-- アカウント　表示用 テキストビュー Start -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/date_view_souko"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="15dp"
+        android:paddingHorizontal="80dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/souko_view"
+        />
+
+
+    <!-- ユーザー入力　画面　テキストエディット　Start -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/souko_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="65dp"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:id="@+id/souko_input_box"
+        android:paddingHorizontal="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/souko_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="倉庫コードを入力してください"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+        <requestFocus/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

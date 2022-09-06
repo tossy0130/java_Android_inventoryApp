@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_color_03">#B20000</color>
+    <color name="back_color_02">#FFFFFF</color>
+    <color name="back_color_01">#CAEA8FB0</color>
+    <color name="l_01">#FFFFFF</color>
+    <color name="darker_gray_02">#ffffff</color>
+
+
+    <!-- メインカラー　タイトル　部分 &  ボタン配色 -->
+
+    <color name="colorPrimary">#e1bebe</color>
+
+    <!--
+    <color name="colorPrimary">#006BA6</color>
+    -->
+    <!--
+    <color name="colorPrimaryDark">#3700B3</color>
+    -->
+    <color name="colorPrimaryDark">#E60012</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="list_title_01">#333333</color>
+    <color name="text_01">#666666</color>
+
+    <color name="midori_01">#0F9856</color>
+
+    <!-- リスト　カラー -->
+    <color name="usu_tya_01">#B28B84</color>
+    <color name="lsit_item_c_01">#F5E5FC</color>
+    <color name="list_title_02">#EDFFEC</color>
+
+    <color name="edhit_01">#E6E6EA</color>
+
+    <color name="colorHaiiro">#F5F5F5</color>
+
+    <color name="black_00">#666666</color>
+
+    <color name="holo_blue_light">#33B5E5</color>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text_Style_01">
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">1.02</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:paddingRight">50dp</item>
+    </style>
+</resources>

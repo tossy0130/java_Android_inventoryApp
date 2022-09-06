@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:isScrollContainer="false"
+    android:id="@+id/qr_const_03"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_01"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_001"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            >
+
+
+            <!--　日付表示用　-->
+            <TextView
+                android:id="@+id/date_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:background="@drawable/bg_border_bottom_02"
+                android:gravity="center_horizontal"
+                android:paddingBottom="7dp"
+                android:textColor="#666666"
+                android:textSize="17dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:letterSpacing="0.2"
+                />
+
+
+            <TextView
+                android:id="@+id/t_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_border_bottom_02"
+                android:gravity="center_horizontal"
+                android:paddingBottom="7dp"
+                android:textColor="#666666"
+                android:textSize="14dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_view_top"
+                android:letterSpacing="0.2"
+                />
+
+
+
+            <!-- アカウント　表示用 テキストビュー Start -->
+              <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:layout_constraintTop_toBottomOf="@+id/t_id"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                  android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="40dp"
+                  android:layout_marginBottom="20dp"
+                  android:text="マスター データセット"
+                  app:icon="@drawable/ic_baseline_play_circle_outline_24"
+                  app:iconGravity="textStart"
+                android:id="@+id/start_btn"
+                />
+
+
+    <!-- ユーザー入力　画面　テキストエディット　Start -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/start_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="35dp"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="5"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:id="@+id/user_input_la"
+        android:paddingHorizontal="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ログインIDを入力してください"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ユーザー入力　テキストエディット　END -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:layout_marginVertical="15dp"
+                android:text="棚卸 version 1.0.6
+"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:paddingVertical="7dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/user_input_la"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+
+
+
+
+    <!--
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintTop_toBottomOf="@+id/setting_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="最新アプリをダウンロード"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        app:icon="@drawable/ic_file_upload_black_24dp"
+        app:iconGravity="textStart"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/kousin_w"
+        />
+-->
+
+
+    <!-- プログレスバー
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_height="20dp"
+        android:layout_width="200dp"
+        android:layout_margin="30dp"
+        android:indeterminate="false"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/setting_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+        -->
+
+    <!--
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setting_02"
+        layout_constraintBaseline_toBaselineOf="@+id/setting_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="ファイル受信"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        app:icon="@drawable/ic_vertical_align_bottom_black_24dp"
+        app:layout_constraintLeft_toRightOf="@+id/setting_01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_put_btn" />
+        -->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

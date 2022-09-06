@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">J販売管理 棚卸</string>
+
+    <!-- タイトル -->
+    <string name="name_selectsheet_product">品名一覧画面</string>
+    <string name="name_selectsheet_listview">ListView表示画面</string>
+    <string name="name_selectsheet_tabel">TableLayout表示画面</string>
+
+    <!-- ここからactivity_main 01関連 -->
+    <string name="text01_product">品名</string>
+    <string name="text01_madein">産地</string>
+    <string name="text01_number">個数</string>
+    <string name="text01_price">単価</string>
+    <string name="text01_kome">※</string>
+    <string name="text01_hinttext">全角・半角12文字以内</string>
+    <string name="text01_hintnumber">半角数字</string>
+    <string name="button01_regist">登録</string>
+    <string name="button01_show">表示</string>
+
+    <!-- 選択用RadioButton -->
+    <string name="radio01_product">品名一覧 (ListView×ArrayAdapter)</string>
+    <string name="radio01_listview">ListView表示 (ListView×BaseAdapter)</string>
+    <string name="radio01_tablelayout">TableLayout表示</string>
+    <!-- ここまで -->
+
+
+    <!-- ここからselect_sheet_product 02関連 -->
+    <!-- select_sheet_product 02 -->
+    <string name="text02_title_detail">ListViewを表示する為にArrayAdapterを使ってシンプルに品名だけをリスト表示します。</string>
+    <string name="text02_title">品名一覧</string>
+    <string name="button02_alldelete">全削除</string>
+
+    <!-- row_sheet_listview 05 -->
+    <!-- リスト上段 -->
+    <string name="text05_title_01">倉庫コード</string>
+    <string name="text05_title_02">商品コード</string>
+    <string name="text05_title_03">名称</string>
+
+    <!-- リスト下段 -->
+    <string name="text05_title_04">棚卸数</string>
+    <string name="text05_title_05">備考</string>
+    <string name="text05_title_06">在庫場所</string>
+    <!-- ここまで -->
+
+</resources>
